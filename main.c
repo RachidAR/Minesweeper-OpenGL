@@ -1,6 +1,5 @@
 #include <windows.h>
 #include <gl/gl.h>
-#include <stdlib.h>
 
 //OpenGL 1.0
 
