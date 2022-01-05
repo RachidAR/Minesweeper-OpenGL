@@ -11,22 +11,6 @@ void DisableOpenGL(HWND, HDC, HGLRC);
 #define mapW 20
 #define mapH 20
 
-//void CalculateFrameRate()
-//{
-//    static float framesPerSecond = 0.0f;
-//    static int fps;
-//    static float lastTime = 0.0f;
-//    float currentTime = GetTickCount() * 0.001f;
-//    ++framesPerSecond;
-//    printf("Current Frames Per Second: %d\n\n", fps);
-//    if (currentTime - lastTime > 1.0f)
-//    {
-//        lastTime = currentTime;
-//        fps = (int)framesPerSecond;
-//        framesPerSecond = 0;
-//    }
-//}
-
 typedef struct{
     BOOL flag;
     BOOL open;
@@ -267,7 +251,6 @@ int WINAPI WinMain(HINSTANCE hInstance,
                 Game_New();
 
             Game_Show();
-//            CalculateFrameRate();
 
             SwapBuffers(hDC);
 
